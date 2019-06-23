@@ -1,13 +1,16 @@
 {
   "name": "lab-19-logger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Client of Message Queue Server",
   "main": "logger.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node logger.js",
+    "lint": "eslint \"**/*.js\"",
+    "test-watch": "jest --watchAll",
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,8 @@
     "@nmq/q": "^1.0.3",
     "dotenv": "^8.0.0",
     "eslint": "^5.16.0",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
   }
 }
